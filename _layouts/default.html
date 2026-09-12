@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    
+    <!-- Native MathJax Loading Snippet -->
+    <script>
+      MathJax = {
+        tex: {
+          tags: 'all', // Restores your cross-referencing and automatic equation numbering rules!
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://jsdelivr.net"></script>
+</head>
+<body>
+    <main style="max-width: 800px; margin: 40px auto; padding: 0 20px; font-family: system-ui, sans-serif;">
+        {{ content }}
+    </main>
+</body>
+</html>
